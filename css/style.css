@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*TOAST*/
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 9999;
+  left: 5%;
+  right: 5%;
+  top: 30px;
+  font-size: 17px;
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+.pt-150{
+ padding-top:150px;
+}
+.pt-100{
+ padding-top:100px;
+}
+.mt-250{
+  margin-top:250px;
+}
+.pt-180{
+  padding-top: 180px;
+}
+.center{
+  margin: auto;
+  width:200px;
+  height:200px;
+  border: 5px solid grey;
+  border-radius:50%;
+  padding: 10px;
+}
+.mb-30{
+  margin-bottom:30px;
+}
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+/*BOOTSTRAP REMOVE OUTLINE*/
+/*WHEN FOCUS it remove the outline given by bootsrap 4*/
+textarea:focus,
+select:focus,
+select.form-control:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus{
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+input,select{
+  height: 40px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
+  display: inline-block;
+  width: auto;
+}
+.error{
+  color:red;
+}
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color:#ffffff;
+  border:1px solid grey;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox .custom-check-btn {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* On mouse-over, add a grey background color */
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+  left: 11px;
+  top: 6px;
+  width: 7px;
+  height: 13px;
+  border: solid #000000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.scrolling-wrapper 
+{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap !important;
+}
+.card-wrapper
+{
+    display: inline-block;
+    margin-top:0px !important;
+}
+.card-header{
+  background-color: #00000000 !important;
+  padding:0px !important;
+}
+.bg-dark,.btn-dark{
+background-color:#000000!important;  
+}
+.btn{
+  border-radius:0px!important;
+}
+
